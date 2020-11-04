@@ -1,4 +1,4 @@
-package main
+package CheckWilayah
 
 import (
 	"fmt"
@@ -20,11 +20,4 @@ func Check(nik int64) {
 	fmt.Println("kecamatan", dataWilayah.Kecamatan[ConvertKecamatan][kecamatan])
 	fmt.Println("nomor nik", t)
 	return
-}
-
-func main() {
-	Check(520320)
-	for _, propinsi := range dataWilayah.Propinsi {
-		fmt.Println(propinsi)
-	}
 }
